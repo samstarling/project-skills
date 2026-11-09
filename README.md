@@ -1,6 +1,6 @@
 # project-skills
 
-[Agent Skills](https://agentskills.io) for running software projects with a coding agent, from idea to merged PR. They work in Claude Code, Codex and any agent that reads `SKILL.md`, and were distilled from about 290 of my own sessions.
+[Agent Skills](https://agentskills.io) for running software projects with a coding agent, from idea to a change ready for review. They work in Claude Code, Codex and any agent that reads `SKILL.md`, and were distilled from about 290 of my own sessions.
 
 ```sh
 npx skills add samstarling/project-skills -g -a claude-code codex
@@ -19,14 +19,14 @@ Prototyping is only for unproven ideas, and well-defined work can start at imple
 
 ## Principles
 
-- **Smallest slice first.** Everything else becomes a deferred ticket.
+- **Smallest slice first.** Everything else, including side issues, becomes a drafted ticket.
 - **Prove the risky part first,** on real data, before hardening anything.
 - **Small PRs in dependency order:** schema and API first, UI on top, destructive steps last.
 - **Evidence over assertion.** Claims rest on something run or measured.
 - **Run ahead once agreed,** then report back with evidence.
 - **The written record stays true,** so anyone can pick up the project from it.
 
-The skills don't control pushing, posting or production access. Set those in your agent's permissions or your own instructions.
+The skills don't include general safety rules for pushing, posting or production access. Set those in your agent's permissions or your own instructions.
 
 ## Editing
 

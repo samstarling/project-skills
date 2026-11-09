@@ -24,7 +24,7 @@ _Lifecycle: **project-scope** → **project-prototype** (if the core claim is un
 7. **Summarise and wait for approval:** what, why, data model, components, deferrals, and PR slices in dependency order (schema and API first, UI on top, destructive steps last). Approval that says to start building ("write it up, then crack on") also approves the design. **project-implement** then builds without asking again.
 
 8. **Write it down after approval.**
-   - **One ticket:** write it into the ticket, using the repo's ticket format, or **Background** and **Approach** if there isn't one.
+   - **One ticket:** once the user confirms, write it into the ticket, using the repo's ticket format, or **Background** and **Approach** if there isn't one.
    - **A project:** read `references/documents.md`. Act as an editor, not an author: interview, suggest bullets for the section in hand, and draft a whole document only when asked. Then propose 2–4 milestones and one small ticket per step, and create them after the user confirms.
    - Draft a ticket for each deferral.
 

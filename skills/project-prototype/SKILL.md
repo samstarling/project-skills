@@ -27,7 +27,7 @@ _Lifecycle: **project-scope** → **project-prototype** (if the core claim is un
 
 8. **Agree a finish line** for long runs (evals, model checking, device runs) up front. Cut to a subset rather than running overnight.
 
-9. **Commit on the prototype branch** so ideas revert cleanly. Keep scratch scripts and dumps out of the repo. No PR unless asked.
+9. **Commit on the prototype branch** so ideas revert cleanly. Keep scratch scripts and dumps out of the repo. Side issues become drafted tickets, not prototype commits. No PR unless asked.
 
 10. **Report:** what works, the measured evidence, what didn't, open risks, and numbered next steps. Note anything that changes the project's docs or tickets.
 

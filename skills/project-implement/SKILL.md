@@ -28,6 +28,6 @@ _Lifecycle: **project-scope** → **project-prototype** (if the core claim is un
 
 8. **Self-check.** Run lint, typecheck, the related tests and CI's format checks for every touched package. Re-read every comment you added. Check the diff holds only this work. Report pre-existing failures with their output and draft a ticket; don't fix them here.
 
-9. **Report briefly:** what changed, how it was verified, remaining risk, branch and commits, drafted tickets, and anything that changes the ticket or project docs. Recommend the next step, usually your agent's code review and then the PR. The PR body gives the problem and what the PR does in plain prose, how we checked it's safe (with measured numbers, such as test or eval results), and anything to do before merging last.
+9. **Report briefly:** what changed, how it was verified, remaining risk, branch and commits, drafted tickets, and anything that changes the ticket or project docs. Recommend the next step, usually a code review and then the PR.
 
 Don't rename migrations already on main. Don't change more UI than asked.
