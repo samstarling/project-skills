@@ -1,4 +1,4 @@
-# Project workflow skills
+# project-skills
 
 How I take a piece of work from idea to merged, as [Agent Skills](https://agentskills.io) that work in Claude Code, Codex and any other agent that reads `SKILL.md`. They were derived from about 290 of my past sessions: what I asked for, what I corrected and what I approved.
 
