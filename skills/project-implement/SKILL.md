@@ -31,5 +31,3 @@ _Lifecycle: **project-scope** → **project-prototype** (if the core claim is un
 9. **Report briefly:** what changed, how it was verified, remaining risk, branch and commits, drafted tickets, and anything that changes the ticket or project docs. Recommend the next step, usually **project-review**.
 
 Don't rename migrations already on main. Don't change more UI than asked.
-
-**Guardrails:** commit locally, but don't commit to main, push, post on the code host, or write to trackers, docs or production without human approval. Side issues become drafted tickets, not fixes.

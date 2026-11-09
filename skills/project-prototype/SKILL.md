@@ -34,5 +34,3 @@ _Lifecycle: **project-scope** → **project-prototype** (if the core claim is un
 11. **Carve out mergeable work when asked.** Find the lowest-risk independent slice (often data collection, a behaviour-neutral skeleton, or schema and API before UI), list other salvageable parts, and draft tickets for the rest. Each slice goes to **project-implement** on a fresh branch, carrying the numbers forward for the PR.
 
 Don't trust one eval run or the aggregate score alone. Don't keep throwaway scaffolding "just in case".
-
-**Guardrails:** commit locally, but don't commit to main, push, post on the code host, or write to trackers, docs or production without human approval. Side issues become drafted tickets, not fixes.

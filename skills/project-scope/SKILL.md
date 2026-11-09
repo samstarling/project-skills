@@ -31,5 +31,3 @@ _Lifecycle: **project-scope** → **project-prototype** (if the core claim is un
 9. **Hand off.** Say whether it goes to **project-prototype** (the core claim is unproven: AI quality, a risky assumption, a UI that needs seeing) or **project-implement** (well defined), and name the branch. For parallel work, offer one brief per ticket, written to a file.
 
 Don't start implementing while asked to plan. Don't accept "can't be done" before checking the vendor's docs. Keep tickets and docs short.
-
-**Guardrails:** commit locally, but don't commit to main, push, post on the code host, or write to trackers, docs or production without human approval. Side issues become drafted tickets, not fixes.

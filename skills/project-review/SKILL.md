@@ -26,5 +26,3 @@ _Lifecycle: **project-scope** → **project-prototype** (if the core claim is un
 **Someone else's PR:** read the diff and ticket, test the user's suspicion first, and give a short verdict plus numbered `file:line` spots, each with a draft comment. Don't touch their branch.
 
 Never post comments or reviews, approve, or resolve threads on the code host. Give the user drafts.
-
-**Guardrails:** commit locally, but don't commit to main, push, post on the code host, or write to trackers, docs or production without human approval. Side issues become drafted tickets, not fixes.

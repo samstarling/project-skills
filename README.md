@@ -26,11 +26,12 @@ Prototyping is only for unproven ideas, and well-defined work can start at imple
 - **Evidence over assertion.** Claims rest on something run or measured.
 - **Run ahead once agreed,** then report back with evidence.
 - **The written record stays true,** so anyone can pick up the project from it.
-- **Nothing leaves your machine without approval:** pushing, posting, and writes to trackers or production.
+
+The skills don't control pushing, posting or production access. Set those in your agent's permissions or your own instructions.
 
 ## Editing
 
-- Each skill stands alone: it carries the principles it needs and ends with a guardrail line.
+- Each skill stands alone and carries the principles it needs.
 - A skill can only reference files in its own folder, because installers copy folders one at a time.
 - Name the role, not one agent's tool. Where a name helps, give each agent's.
 - Keep skills under about 40 lines and descriptions under about 600 characters, leading with phrases people actually say.

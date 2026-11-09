@@ -24,5 +24,3 @@ _Lifecycle: **project-scope** → **project-prototype** (if the core claim is un
 **Project updates:** when asked, draft a short status update from the same record: what landed, what's next, risks or decisions needed. Keep it to a few lines, for the user to post.
 
 Don't rewrite a doc wholesale or smooth the user's prose into your own voice. Don't treat a doc as more current than the code, the data or merged PRs.
-
-**Guardrails:** commit locally, but don't commit to main, push, post on the code host, or write to trackers, docs or production without human approval. Side issues become drafted tickets, not fixes.
