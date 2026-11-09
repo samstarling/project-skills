@@ -7,7 +7,7 @@ description: Bring a project's docs, milestones and tickets in line with what's 
 
 Keep the written record true, so anyone can pick the project up from it. Compare what a project's docs and tickets say with what's true now, and fix the differences with the user's approval. Small drift found mid-task (one ticket, one sentence) can be fixed straight away after confirming. Use this skill for a project-wide pass.
 
-_Lifecycle: **project-scope** → **project-prototype** (if the core claim is unproven) → **project-implement** → **project-review**, with **project-reconcile** at natural breaks._
+_Lifecycle: **project-scope** → **project-prototype** (if the core claim is unproven) → **project-implement** → your agent's code review and the PR, with **project-reconcile** at natural breaks._
 
 1. **Read the live record:** the project's docs (brief, specs, technical scope, whatever it has), its milestones and every ticket's status, description and blockers. Re-read rather than trusting earlier reads, because the user edits by hand.
 

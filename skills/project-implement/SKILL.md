@@ -7,7 +7,7 @@ description: Build agreed work into a small, verified, committed change, proposi
 
 Build the smallest version that delivers the ticket's outcome, verify it, and leave it committed and ready for review.
 
-_Lifecycle: **project-scope** → **project-prototype** (if the core claim is unproven) → **project-implement** → **project-review**, with **project-reconcile** at natural breaks._
+_Lifecycle: **project-scope** → **project-prototype** (if the core claim is unproven) → **project-implement** → your agent's code review and the PR, with **project-reconcile** at natural breaks._
 
 1. **Get on the right branch.** Run `git status` and `git worktree list`. If you're already in a worktree for this ticket, use it. For ticket work from the main checkout, create a worktree with the repo's tooling and the tracker's branch name. Small fixes the user asks for in place can stay where they are, but create a branch before committing if that's the main branch, unless the user said to commit to main. Branch from the base PR's branch when stacking.
 
@@ -28,6 +28,6 @@ _Lifecycle: **project-scope** → **project-prototype** (if the core claim is un
 
 8. **Self-check.** Run lint, typecheck, the related tests and CI's format checks for every touched package. Re-read every comment you added. Check the diff holds only this work. Report pre-existing failures with their output and draft a ticket; don't fix them here.
 
-9. **Report briefly:** what changed, how it was verified, remaining risk, branch and commits, drafted tickets, and anything that changes the ticket or project docs. Recommend the next step, usually **project-review**.
+9. **Report briefly:** what changed, how it was verified, remaining risk, branch and commits, drafted tickets, and anything that changes the ticket or project docs. Recommend the next step, usually your agent's code review and then the PR. The PR body gives the problem and what the PR does in plain prose, how we checked it's safe (with measured numbers, such as test or eval results), and anything to do before merging last.
 
 Don't rename migrations already on main. Don't change more UI than asked.

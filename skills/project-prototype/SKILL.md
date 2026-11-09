@@ -7,7 +7,7 @@ description: Prove an approach with a disposable, end-to-end prototype on real d
 
 Prove the risky part before hardening anything: answer "does this approach work, and is it the right one?" quickly, with measured evidence rather than reasoning. Prototypes are labelled as such and disposable.
 
-_Lifecycle: **project-scope** → **project-prototype** (if the core claim is unproven) → **project-implement** → **project-review**, with **project-reconcile** at natural breaks._
+_Lifecycle: **project-scope** → **project-prototype** (if the core claim is unproven) → **project-implement** → your agent's code review and the PR, with **project-reconcile** at natural breaks._
 
 1. **Propose the design and wait for OK.** In a few bullets: branch, architecture, what's real versus stubbed, the data source, what it won't cover. "Run ahead" means build autonomously _after_ this OK. A "skeleton" wires up every moving part minimally.
 

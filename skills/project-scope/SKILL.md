@@ -7,7 +7,7 @@ description: Agree the smallest useful scope before code is written, for a ticke
 
 Agree what to build, and what not to, before writing code: the smallest version that delivers the outcome, with everything else deferred as a ticket rather than built "while we're here". It ends with a written scope and explicit human approval.
 
-_Lifecycle: **project-scope** → **project-prototype** (if the core claim is unproven) → **project-implement** → **project-review**, with **project-reconcile** at natural breaks._
+_Lifecycle: **project-scope** → **project-prototype** (if the core claim is unproven) → **project-implement** → your agent's code review and the PR, with **project-reconcile** at natural breaks._
 
 1. **Load the context yourself.** Read the ticket with its comments, relations and linked docs, or the linked thread, error or dashboard, in full. If a brief looks cut off, ask for the rest. Restate the problem in one or two sentences.
 
