@@ -9,7 +9,7 @@ How I take a piece of work from idea to merged, as [Agent Skills](https://agents
 | [project-implement](skills/project-implement/SKILL.md) | The work is agreed: "let's pick up ABC-123" | An approved design, built, verified and committed locally, ready for review |
 | [project-reconcile](skills/project-reconcile/SKILL.md) | "Rationalise the project", "what's next?", a status update | Docs, milestones and tickets that match reality, and the next ticket |
 
-The usual path is project-scope → project-prototype (optional) → project-implement, with project-reconcile at natural breaks. Code review, the PR, comments and CI are covered by the always-on rules and each agent's own review command, so there's no skill for them.
+The [lifecycle](global/AGENTS.md#lifecycle) in the always-on rules shows how they fit together. Review has no skill: the rules' Pull requests section and each agent's own reviewer cover it.
 
 ## Always-on rules
 

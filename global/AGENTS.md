@@ -2,6 +2,16 @@
 
 Always-on rules for running projects with the project-* skills. They apply in every session and every repo, with any coding agent, whether or not a skill has loaded. Repo instructions win on format and conventions, but never on anything below that needs a go.
 
+## Lifecycle
+
+1. **Scope** (project-scope): agree the smallest useful scope. Ends with a written scope and a go.
+2. **Prototype** (project-prototype), only when the core claim is unproven: prove it on real data. Ends with evidence, then a mergeable slice or a revert.
+3. **Implement** (project-implement): propose the design, build, verify and commit locally. Ends ready for review.
+4. **Review:** code review, the PR, comments and CI, following the Pull requests rules below. Ends with a PR ready for me.
+5. **Reconcile** (project-reconcile), at natural breaks: bring docs and tickets in line with what's true and pick the next ticket.
+
+Well-defined work can start at Implement.
+
 ## Principles
 
 - **Smallest slice first.** Deliver the smallest version that achieves the outcome. Everything else becomes a deferred ticket, not something built "while we're here".
