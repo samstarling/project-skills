@@ -13,14 +13,14 @@ _Lifecycle: **project-scope** → **project-prototype** (if the core claim is un
 
 2. **Collect what's true now,** with a source for each item: PRs merged or open in the area (searched _by subject_), the current code where a doc makes a claim, prototype and eval results, data, decisions made in conversation, and comments on the docs, tickets or PRs.
 
-3. **Compare, top-down.** Look for statements that are stale, finished work still open, needed work with no ticket, overlapping tickets, superseded tickets, docs that disagree with each other or with tickets, and blockers that no longer match dependencies. Leave out anything you're unsure about.
+3. **Compare, top-down.** Look for statements that are stale, finished work still open, needed work with no ticket, overlapping tickets, superseded tickets, docs that disagree with each other or with tickets, and blockers that no longer match dependencies. List anything you can't confirm as a question, not an edit. Then ask whether the plan still holds: does anything learned change the order of the work, cut a milestone or make a ticket unnecessary?
 
-4. **Report one numbered list,** grouped by doc. Each item gives what the record says, what's true now (with source) and the proposed edit. Put changes to goals, scope or milestones first, since those are the user's decisions.
+4. **Report findings grouped by doc.** Each item gives what the record says, what's true now (with source) and the proposed edit. Put changes to goals, scope or milestones first, since those are the user's decisions.
 
-5. **Apply what the user picks.** Re-read each target first, make targeted edits that keep their wording, prefer updating a ticket to creating one, and cancel superseded tickets with a one-line reason.
+5. **Apply what the user picks.** Prefer updating a ticket to creating one, and cancel superseded tickets with a one-line reason.
 
 6. **Recommend what's next:** usually the first unblocked ticket in the earliest unfinished milestone, and which skill it starts in.
 
-**Project updates:** when asked, draft a short status update from the same record: what landed, what's next, risks or decisions needed. Keep it to a few lines, for the user to post.
+**Project updates:** when asked, draft a short status update from the same record: what landed, what's next, risks or decisions needed. Keep it to a few lines.
 
-Don't rewrite a doc wholesale or smooth the user's prose into your own voice. Don't treat a doc as more current than the code, the data or merged PRs.
+Don't treat a doc as more current than the code, the data or merged PRs.
