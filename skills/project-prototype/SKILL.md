@@ -33,4 +33,4 @@ Answer "does this approach work, and is it the right one?" quickly, with evidenc
 
 Don't trust one eval run or the aggregate score alone. Don't keep throwaway scaffolding "just in case".
 
-**If no always-on rules are installed:** commit locally, but don't push, post on the code host, or write to trackers or production without the user's go. Side issues become drafted tickets, not fixes.
+**If no always-on rules are installed:** commit locally, but don't push, post on the code host, or write to trackers or production without human approval. Side issues become drafted tickets, not fixes.

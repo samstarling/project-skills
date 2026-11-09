@@ -18,7 +18,7 @@ Build the smallest version that delivers the ticket's outcome, verify it, and le
 5. **Propose the design and wait for OK.** Naming the ticket is not approval.
    - **Small, obvious change:** two lines on what changes and how you'll check it.
    - **Anything bigger:** what changes and why; contract or schema changes; the tests you'd add; whether risky user-facing behaviour should go behind a flag; PR slices (schema and API first, UI on top, destructive steps last); a deploy order that's safe if producer and consumer ship separately; the simplest alternative you rejected.
-   - **Already approved** this session (a scoping go, or "just do it"): skip the proposal and build.
+   - **Already approved** this session (scope approved in project-scope, or "just do it"): skip the proposal and build.
 
 6. **Build in small commits.** Commit each logical step once lint and typecheck pass. Reuse existing names, helpers and the tested write path. Comments say why, never what, and stay sparser than the surrounding file. Add only the agreed tests.
 
@@ -30,4 +30,4 @@ Build the smallest version that delivers the ticket's outcome, verify it, and le
 
 Don't rename migrations already on main. Don't change more UI than asked.
 
-**If no always-on rules are installed:** commit locally, but don't push, post on the code host, or write to trackers or production without the user's go. Side issues become drafted tickets, not fixes.
+**If no always-on rules are installed:** commit locally, but don't push, post on the code host, or write to trackers or production without human approval. Side issues become drafted tickets, not fixes.

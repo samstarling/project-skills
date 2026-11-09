@@ -5,7 +5,7 @@ description: Agree the smallest useful scope before code is written, for a ticke
 
 # Scoping
 
-Agree what to build, and what not to, before writing code. It ends with a written scope and an explicit go.
+Agree what to build, and what not to, before writing code. It ends with a written scope and explicit human approval.
 
 1. **Load the context yourself.** Read the ticket with its comments, relations and linked docs, or the linked thread, error or dashboard, in full. If a brief looks cut off, ask for the rest. Restate the problem in one or two sentences.
 
@@ -19,9 +19,9 @@ Agree what to build, and what not to, before writing code. It ends with a writte
 
 6. **Stress-test when asked** ("roast it"). Re-read the current written version first, push back where you agree there's a problem, and respect simplifications they say are deliberate.
 
-7. **Summarise and wait for one go:** what, why, data model, components, rough PR count, deferrals. A go that says to start building ("write it up, then crack on") also approves the design. **project-implement** then builds without asking again.
+7. **Summarise and wait for approval:** what, why, data model, components, rough PR count, deferrals. Approval that says to start building ("write it up, then crack on") also approves the design. **project-implement** then builds without asking again.
 
-8. **Write it down after the go.**
+8. **Write it down after approval.**
    - **One ticket:** write it into the ticket, using the repo's ticket format, or **Background** and **Approach** if there isn't one.
    - **A project:** read `references/documents.md`. Act as an editor, not an author: interview, suggest bullets for the section in hand, and draft a whole document only when asked. Then propose 2–4 milestones and one small ticket per step, and create them after the user confirms.
    - Draft a ticket for each deferral.
@@ -30,4 +30,4 @@ Agree what to build, and what not to, before writing code. It ends with a writte
 
 Don't start implementing while asked to plan. Don't accept "can't be done" before checking the vendor's docs. Keep tickets and docs short.
 
-**If no always-on rules are installed:** commit locally, but don't push, post on the code host, or write to trackers or production without the user's go. Side issues become drafted tickets, not fixes.
+**If no always-on rules are installed:** commit locally, but don't push, post on the code host, or write to trackers or production without human approval. Side issues become drafted tickets, not fixes.

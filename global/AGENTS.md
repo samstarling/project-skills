@@ -1,10 +1,10 @@
 # How I run projects
 
-Always-on rules for running projects with the project-* skills. They apply in every session and every repo, with any coding agent, whether or not a skill has loaded. Repo instructions win on format and conventions, but never on anything below that needs a go.
+Always-on rules for running projects with the project-* skills. They apply in every session and every repo, with any coding agent, whether or not a skill has loaded. Repo instructions win on format and conventions, but never on anything below that needs human approval.
 
 ## Lifecycle
 
-1. **Scope** (project-scope): agree the smallest useful scope. Ends with a written scope and a go.
+1. **Scope** (project-scope): agree the smallest useful scope. Ends with a written scope and human approval.
 2. **Prototype** (project-prototype), only when the core claim is unproven: prove it on real data. Ends with evidence, then a mergeable slice or a revert.
 3. **Implement** (project-implement): propose the design, build, verify and commit locally. Ends ready for review.
 4. **Review:** code review, the PR, comments and CI, following the Pull requests rules below. Ends with a PR ready for me.
@@ -18,14 +18,14 @@ Well-defined work can start at Implement.
 - **Prove the risky part first.** When the core claim is unproven (AI quality, a risky assumption, a UI that needs seeing), prototype it on real data before hardening anything.
 - **Small PRs in dependency order.** Work lands as small, reviewable PRs: schema and API first, UI on top, destructive steps last.
 - **Evidence over assertion.** Claims about code, data or quality rest on something run or measured, not on reasoning alone.
-- **Run ahead once agreed.** After a go, build without checking in at every step, then report back with evidence.
+- **Run ahead once agreed.** After approval, build without checking in at every step, then report back with evidence.
 - **The written record stays true.** Update docs and tickets as decisions change, not at the end, so anyone can pick up the project from them.
 
 ## Deciding
 
 - Present options, findings and next steps as a numbered list with a recommendation, so I can answer "do 1 and 3".
 - When something is mine to decide (intent, taste, customers, ownership), ask. Answer what you can from code or data first. Use the agent's question tool if it has one (AskUserQuestion in Claude Code; request_user_input in Codex, which only offers it in Plan mode), in as few rounds as its limits allow. Otherwise ask in a numbered list with a recommendation, even if the agent's default is a single plain-text question.
-- A go is an explicit yes to that specific action. Picking a fix is not a go to push it.
+- Human approval is an explicit yes to that specific action. Picking a fix doesn't approve pushing it.
 - Take my decisions literally. Once I accept a risk, stop raising it.
 - End a report with one recommended next action.
 
@@ -37,8 +37,8 @@ Well-defined work can start at Implement.
 
 ## Git
 
-- Commit atomically while you work. **Never push until I ask.** Opening a PR I asked for counts as asking; after that, each push needs a go.
-- Don't commit to the main branch without a go.
+- Commit atomically while you work. **Never push until I ask.** Opening a PR I asked for counts as asking; after that, each push needs human approval.
+- Don't commit to the main branch without human approval.
 
 ## Pull requests
 
@@ -52,6 +52,6 @@ Well-defined work can start at Implement.
 
 ## External systems
 
-- Writes to trackers, docs, chat or feature flags need a go.
+- Writes to trackers, docs, chat or feature flags need human approval.
 - **Never post comments or reviews, approve, or resolve threads on the code host (GitHub, GitLab and so on).** Give me a draft and I'll post it myself. Opening a PR I asked for is fine; pushes to it and edits to its body follow the rules above.
-- Production reads need a go once per session; production writes need one every time. Nothing customers see happens without a go.
+- Production reads need human approval once per session; production writes need it every time. Nothing customers see happens without human approval.

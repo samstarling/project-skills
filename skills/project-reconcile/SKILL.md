@@ -23,4 +23,4 @@ Compare what a project's docs and tickets say with what's true now, and fix the 
 
 Don't rewrite a doc wholesale or smooth the user's prose into your own voice. Don't treat a doc as more current than the code, the data or merged PRs.
 
-**If no always-on rules are installed:** commit locally, but don't push, post on the code host, or write to trackers or production without the user's go. Side issues become drafted tickets, not fixes.
+**If no always-on rules are installed:** commit locally, but don't push, post on the code host, or write to trackers or production without human approval. Side issues become drafted tickets, not fixes.

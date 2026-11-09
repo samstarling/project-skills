@@ -4,7 +4,7 @@ How I take a piece of work from idea to merged, as [Agent Skills](https://agents
 
 | Skill | Use it when | Leaves behind |
 | --- | --- | --- |
-| [project-scope](skills/project-scope/SKILL.md) | A ticket needs a plan, "what would it take…", an incident to explain, a plan to roast, a new project | An agreed scope written down, deferrals drafted as tickets, a go |
+| [project-scope](skills/project-scope/SKILL.md) | A ticket needs a plan, "what would it take…", an incident to explain, a plan to roast, a new project | An agreed scope written down, deferrals drafted as tickets, human approval |
 | [project-prototype](skills/project-prototype/SKILL.md) | The core claim is unproven: AI quality, a risky assumption, a UI that needs seeing | Measured evidence on real data, then a first mergeable slice or a revert |
 | [project-implement](skills/project-implement/SKILL.md) | The work is agreed: "let's pick up ABC-123" | An approved design, built, verified and committed locally, ready for review |
 | [project-reconcile](skills/project-reconcile/SKILL.md) | "Rationalise the project", "what's next?", a status update | Docs, milestones and tickets that match reality, and the next ticket |
