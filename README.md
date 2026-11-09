@@ -20,14 +20,14 @@ The [lifecycle](global/AGENTS.md#lifecycle) in the always-on rules shows how the
 Install the skills with the [skills CLI](https://github.com/vercel-labs/skills):
 
 ```sh
-npx skills add <owner>/<repo> -g -a claude-code codex
+npx skills add samstarling/project-skills -g -a claude-code codex
 ```
 
-Use a local path instead of `<owner>/<repo>` to install from a checkout. The CLI keeps one copy in `~/.agents/skills`, which Codex reads, and links `~/.claude/skills` to it. Add more agents with `-a`. After changes, run `npx skills update -g` (or re-run `add` for a local path) and restart the agents.
+Use a local path instead of `samstarling/project-skills` to install from a checkout. The CLI keeps one copy in `~/.agents/skills`, which Codex reads, and links `~/.claude/skills` to it. Add more agents with `-a`. After changes, run `npx skills update -g` (or re-run `add` for a local path) and restart the agents.
 
 The always-on rules are a one-off manual step, because the CLI only installs skills:
 
-- **Claude Code:** add `@<path to this repo>/global/AGENTS.md` to `~/.claude/CLAUDE.md`. It reads the file live, so edits apply straight away.
+- **Claude Code:** clone the repo (or your fork) and add `@<path to your clone>/global/AGENTS.md` to `~/.claude/CLAUDE.md`. It reads the file live, so edits apply straight away.
 - **Codex:** paste the file into `~/.codex/AGENTS.md`, which has no imports. Re-paste it when the rules change.
 
 ## Writing for every agent
