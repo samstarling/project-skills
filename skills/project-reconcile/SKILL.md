@@ -1,6 +1,6 @@
 ---
 name: project-reconcile
-description: Bring a project's docs, milestones and tickets in line with what's true now, recommend what's next, and draft project updates. Use when the user says "rationalise" or "reconcile" the project, "is everything up to date?", "re-read the project doc and tickets, anything we need to change?", "knowing what we know now, should the plan change?", "the plan may have shifted after comments", "look at what's landed, what's next?", or asks for a project status update.
+description: Bring a project's docs, milestones and tickets in line with what's true now, recommend what's next, and draft project updates. Use when the user says "rationalise" or "reconcile" the project, "is everything up to date?", "re-read the project doc and tickets, anything we need to change?", "knowing what we know now, should the plan change?", "the plan may have shifted after comments", "look at what's landed, what's next?", "what's left on the project?", or asks for a project status update.
 ---
 
 # Reconciling

@@ -1,6 +1,6 @@
 ---
 name: project-implement
-description: Build agreed work into a small, verified, committed change, proposing the design first. Use whenever the user names a ticket to work on ("let's pick up ABC-123", "pick up ABC-123 from the tracker", "look at <ticket> and pick it up"), points at a brief or plan file to build ("read your brief at <path>"), says "let's build that", "crack on" or "let's do 1 and 3" after an agreed plan, asks for a fix whose cause is known, or asks to build the next slice on top of an open PR. Ends when the work is verified and committed locally, ready for review.
+description: Build agreed work into a small, verified, committed change, proposing the design first. Use whenever the user names a ticket to work on ("let's pick up ABC-123", "pick up ABC-123 from the tracker", "look at <ticket> and pick it up"), points at a brief or plan file to build ("read your brief at <path>"), says "let's build that", "crack on" or "let's do 1 and 3" after an agreed plan, asks for a fix whose cause is known, or asks to build the next slice on top of an open PR. Ends when the work is verified and committed locally, ready for review. Not for PR review comments or CI failures.
 ---
 
 # Implementing
