@@ -10,10 +10,10 @@ Update with `npx skills update -g`, then restart your agents.
 
 | Stage | Skill | Use it when |
 | --- | --- | --- |
-| 1 | [project-scope](skills/project-scope/SKILL.md) | A ticket needs a plan, "what would it take…", a new project |
+| 1 | [project-scope](skills/project-scope/SKILL.md) | A ticket needs a plan, "what would it take…", a new project, logging a ticket |
 | 2 | [project-prototype](skills/project-prototype/SKILL.md) | The core claim is unproven: AI quality, a risky assumption, a UI that needs seeing |
 | 3 | [project-implement](skills/project-implement/SKILL.md) | The work is agreed: "let's pick up ABC-123" |
-| Any time | [project-reconcile](skills/project-reconcile/SKILL.md) | "Rationalise the project", "what's next?", a status update |
+| Any time | [project-reconcile](skills/project-reconcile/SKILL.md) | "Rationalise the project", "what's left on the project?", a status update |
 
 Prototyping is only for unproven ideas, and well-defined work can start at implement. Code review and the PR use your agent's own reviewer and PR tools.
 

@@ -1,6 +1,6 @@
 ---
 name: project-implement
-description: Build agreed work into a small, verified, committed change, proposing the design first. Use whenever the user names a ticket to work on ("let's pick up ABC-123", "pick up ABC-123 from the tracker", "look at <ticket> and pick it up"), points at a brief or plan file to build ("read your brief at <path>"), says "let's build that", "crack on" or "let's do 1 and 3" after an agreed plan, asks for a fix whose cause is known, or asks to build the next slice on top of an open PR. Ends when the work is verified and committed locally, ready for review. Not for PR review comments or CI failures.
+description: Build agreed work into a small, verified, committed change, proposing the design first. Use whenever the user names a ticket to work on ("let's pick up ABC-123", "pick up ABC-123 from the tracker", "look at <ticket> and pick it up"), points at an agent brief or plan file to build ("read your brief at <path>"), says "let's build that" or "crack on" after an agreed plan, asks for a fix whose cause is known, or asks to build the next slice on top of an open PR. Ends when the work is verified and committed locally, ready for review. Not for PR review comments or CI failures.
 ---
 
 # Implementing
@@ -11,7 +11,7 @@ _Lifecycle: **project-scope** → **project-prototype** (if the core claim is un
 
 1. **Work on the ticket's branch:** the tracker's branch name, built on the previous slice's branch when there is one.
 
-2. **Read the input in full:** the ticket with its comments and linked docs, or the whole brief. Treat a brief's constraints as hard rules. If the input is thin or disputed, or the cause is unknown, say so and switch to **project-scope**.
+2. **Read the input in full:** the ticket with its comments and linked docs, or the whole agent brief. Treat a brief's constraints as hard rules. If the input is thin or disputed, or the cause is unknown, say so and switch to **project-scope**.
 
 3. **Check the plan still stands.** Fetch main and search merged and open PRs _by subject_ for overlapping work or changed conventions.
 
@@ -22,8 +22,12 @@ _Lifecycle: **project-scope** → **project-prototype** (if the core claim is un
 
 5. **Build the first slice.** Once the design is approved, build without checking in at every step, adding only the agreed tests. Build later slices only if the user asked for them; otherwise draft or update their tickets. If the build shows the agreed plan is wrong, stop, explain what changed and re-propose.
 
-6. **Check it delivers the ticket's outcome** with realistic data, in every UI state. For prompt or agent changes, use the eval loop in **project-prototype**.
+6. **Check it delivers the ticket's outcome** with realistic data, in every UI state. For prompt or agent changes, use the eval loop (step 7) in **project-prototype**.
 
 7. **Keep it to this ticket.** Draft a ticket for any side issue or pre-existing failure you find, with its output, rather than fixing it here.
 
 8. **Report briefly:** what changed, how it was verified, remaining risk, branch and commits, drafted tickets, and anything that changes the ticket or project docs, offering to update them. Recommend the next step, usually a code review and then the PR.
+
+**Between slices** ("that's merged, what's next?"): re-read the agreed slices and the ticket, check what has merged, and recommend the next slice and whether it stacks. Use **project-reconcile** only for a project-wide pass.
+
+**Parking it:** if the user puts the ticket down, draft a short handover comment for it: what was tried and learned, branch state, and the next step.
