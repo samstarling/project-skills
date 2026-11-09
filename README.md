@@ -2,31 +2,35 @@
 
 [Agent Skills](https://agentskills.io) for running software projects with a coding agent, from idea to merged PR. They work in Claude Code, Codex and any agent that reads `SKILL.md`, and were distilled from about 290 of my own sessions.
 
-| Skill | Use it when |
-| --- | --- |
-| [project-scope](skills/project-scope/SKILL.md) | A ticket needs a plan, "what would it take…", an incident to explain, a new project |
-| [project-prototype](skills/project-prototype/SKILL.md) | The core claim is unproven: AI quality, a risky assumption, a UI that needs seeing |
-| [project-implement](skills/project-implement/SKILL.md) | The work is agreed: "let's pick up ABC-123" |
-| [project-reconcile](skills/project-reconcile/SKILL.md) | "Rationalise the project", "what's next?", a status update |
-
-## Always-on rules
-
-[global/AGENTS.md](global/AGENTS.md) sets out the lifecycle, principles and rules that apply in every session, whether or not a skill loads. Code review and PRs have no skill; the rules cover them. They're written as you ("never push until I ask"), so change any you'd put differently, and keep general preferences such as writing style in your own global instructions.
-
-## Install
-
 ```sh
 npx skills add samstarling/project-skills -g -a claude-code codex
 ```
 
-Update with `npx skills update -g`, then restart your agents. The rules are a manual step:
+Update with `npx skills update -g`, then restart your agents.
 
-- **Claude Code:** clone this repo and add `@<path to your clone>/global/AGENTS.md` to `~/.claude/CLAUDE.md`.
-- **Codex:** paste `global/AGENTS.md` into `~/.codex/AGENTS.md`, and re-paste it when it changes.
+| Stage | Skill | Use it when |
+| --- | --- | --- |
+| 1 | [project-scope](skills/project-scope/SKILL.md) | A ticket needs a plan, "what would it take…", an incident to explain, a new project |
+| 2 | [project-prototype](skills/project-prototype/SKILL.md) | The core claim is unproven: AI quality, a risky assumption, a UI that needs seeing |
+| 3 | [project-implement](skills/project-implement/SKILL.md) | The work is agreed: "let's pick up ABC-123" |
+| 4 | [project-review](skills/project-review/SKILL.md) | Code review, the PR, reviewer comments, CI, a teammate's PR |
+| Any time | [project-reconcile](skills/project-reconcile/SKILL.md) | "Rationalise the project", "what's next?", a status update |
+
+Prototyping is only for unproven ideas, and well-defined work can start at implement.
+
+## Principles
+
+- **Smallest slice first.** Everything else becomes a deferred ticket.
+- **Prove the risky part first,** on real data, before hardening anything.
+- **Small PRs in dependency order:** schema and API first, UI on top, destructive steps last.
+- **Evidence over assertion.** Claims rest on something run or measured.
+- **Run ahead once agreed,** then report back with evidence.
+- **The written record stays true,** so anyone can pick up the project from it.
+- **Nothing leaves your machine without approval:** pushing, posting, and writes to trackers or production.
 
 ## Editing
 
-- Skills assume the rules. Each ends with one guardrail line so it's safe installed on its own.
+- Each skill stands alone: it carries the principles it needs and ends with a guardrail line.
 - A skill can only reference files in its own folder, because installers copy folders one at a time.
 - Name the role, not one agent's tool. Where a name helps, give each agent's.
 - Keep skills under about 40 lines and descriptions under about 600 characters, leading with phrases people actually say.
