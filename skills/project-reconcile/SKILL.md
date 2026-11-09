@@ -19,8 +19,8 @@ _Lifecycle: **project-scope** → **project-prototype** (if the core claim is un
 
 5. **Apply what the user picks.** Prefer updating a ticket to creating one, and cancel superseded tickets with a one-line reason.
 
-6. **Recommend what's next:** usually the first unblocked ticket in the earliest unfinished milestone, and which skill it starts in. If it starts in another session, write an agent brief to a file: the ticket, agreed design and constraints, base branch, how to verify, where to stop and what to report back.
+6. **Recommend what's next:** usually the first unblocked ticket in the earliest unfinished milestone, and which skill it starts in. If it starts in another session, offer an agent brief with whatever is agreed so far: the ticket, design and constraints, base branch, how to verify, where to stop and what to report back. Write it outside the repo and give the path.
 
-**Project updates:** when asked, read the last few updates and cover what's changed since then (what landed, what's next, risks or decisions needed), matching their length and tone. Steps 1–6 aren't needed unless asked.
+**Project updates:** when asked, draft one from the tickets closed and PRs merged since the last update: what landed, what's next, risks or decisions needed. Match the earlier updates' length and tone; if there are none, keep it to a few lines. Steps 1–6 aren't needed unless asked.
 
 Don't treat a doc as more current than the code, the data or merged PRs.

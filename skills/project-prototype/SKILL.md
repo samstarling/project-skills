@@ -1,6 +1,6 @@
 ---
 name: project-prototype
-description: Prove an approach with a disposable, end-to-end prototype on real data before hardening it into mergeable PRs, including eval loops when the risk is AI output quality. Use when the user says "prototype it", "spike it", "build a thin skeleton", "run ahead and build a working prototype", "try the risky part first", "can we prove this works?", "can we prove the AI output is good enough?", "show me what it would look like", "how can I try this against production data?" or "turn this prototype into PRs", or when scoping hands over work whose core claim is unproven.
+description: Prove an approach with a disposable, end-to-end prototype on real data before hardening it into mergeable PRs, including eval loops when the risk is AI output quality. Use when the user says "prototype it", "spike it", "build a thin skeleton", "run ahead and build a working prototype", "try the risky part first", "can we prove this works?", "can we prove the AI output is good enough?", "mock it up before we commit", "how can I try this against production data?" or "turn this prototype into PRs", or when scoping hands over work whose core claim is unproven.
 ---
 
 # Prototyping
@@ -21,12 +21,12 @@ _Lifecycle: **project-scope** → **project-prototype** (if the core claim is un
 
 6. **Interview for taste.** Show real outputs and have the user label them good or bad. The labels become eval cases.
 
-7. **Eval loop for AI-quality claims:** turn the labelled outputs into a suite, take a repeated baseline, and hill-climb pass rate, cost and latency. Revert ideas the numbers don't justify. Keep the suite and its labelled cases: they ship with the hardened work. When **project-implement** sends a prompt or agent change here, use only this step, on the ticket's branch, committing the failing case and baseline before the fix.
+7. **Eval loop for AI-quality claims:** turn the labelled outputs into a suite, take a repeated baseline, and hill-climb pass rate, cost and latency. Revert ideas the numbers don't justify. Keep the suite and its labelled cases: they ship with the hardened work. When **project-implement** sends a prompt or agent change here, use only this step, on the ticket's branch: start from the failing case as the first labelled case, commit it and a baseline, then fix.
 
 8. **Keep the prototype code disposable:** its own branch, never merged. Side issues become drafted tickets.
 
 9. **Report:** what works, the measured evidence, what didn't, open risks and next steps. Record the verdict (proven, disproven or pivot) and its evidence in the project doc or ticket, and note anything else it changes. If disproven or pivoting, recommend **project-scope** to re-plan, or **project-reconcile** if other tickets depend on it.
 
-10. **Carve out mergeable work when asked.** Find the lowest-risk independent slice (often data collection, a behaviour-neutral skeleton, or schema and API before UI), list other salvageable parts, and draft tickets for the rest. Each slice goes to **project-implement**, carrying the numbers forward.
+10. **Carve out mergeable work when asked.** Find the lowest-risk independent slice (often data collection, a behaviour-neutral skeleton, or schema and API before UI), list other salvageable parts, and draft tickets for the rest. Each slice goes to **project-implement**, carrying the numbers and the eval suite forward.
 
 Don't keep throwaway scaffolding "just in case".
