@@ -9,7 +9,7 @@ Compare what a project's docs and tickets say with what's true now, and fix the 
 
 1. **Read the live record:** the project's docs (brief, specs, technical scope, whatever it has), its milestones and every ticket's status, description and blockers. Re-read rather than trusting earlier reads, because the user edits by hand.
 
-2. **Collect what's true now,** with a source for each item: PRs merged or open in the area (searched *by subject*), the current code where a doc makes a claim, prototype and eval results, data, decisions made in conversation, and comments on the docs, tickets or PRs.
+2. **Collect what's true now,** with a source for each item: PRs merged or open in the area (searched _by subject_), the current code where a doc makes a claim, prototype and eval results, data, decisions made in conversation, and comments on the docs, tickets or PRs.
 
 3. **Compare, top-down.** Look for statements that are stale, finished work still open, needed work with no ticket, overlapping tickets, superseded tickets, docs that disagree with each other or with tickets, and blockers that no longer match dependencies. Leave out anything you're unsure about.
 

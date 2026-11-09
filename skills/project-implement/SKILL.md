@@ -11,7 +11,7 @@ Build the smallest version that delivers the ticket's outcome, verify it, and le
 
 2. **Read the input in full:** the ticket with its comments and linked docs, or the whole brief. Treat a brief's constraints as hard rules. If the input is thin or disputed, or the cause is unknown, say so and switch to **project-scope**.
 
-3. **Check the plan still stands.** Fetch main and search merged and open PRs *by subject* for overlapping work or changed conventions.
+3. **Check the plan still stands.** Fetch main and search merged and open PRs _by subject_ for overlapping work or changed conventions.
 
 4. **Read the code you'll change** and check every assumption you'll build on. Look for what already exists to reuse.
 

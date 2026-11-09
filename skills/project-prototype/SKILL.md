@@ -7,7 +7,7 @@ description: Prove an approach with a disposable, end-to-end prototype on real d
 
 Answer "does this approach work, and is it the right one?" quickly, with evidence. Prototypes are labelled as such and disposable.
 
-1. **Propose the design and wait for OK.** In a few bullets: branch, architecture, what's real versus stubbed, the data source, what it won't cover. "Run ahead" means build autonomously *after* this OK. A "skeleton" wires up every moving part minimally.
+1. **Propose the design and wait for OK.** In a few bullets: branch, architecture, what's real versus stubbed, the data source, what it won't cover. "Run ahead" means build autonomously _after_ this OK. A "skeleton" wires up every moving part minimally.
 
 2. **Test the riskiest assumption first,** by hand on one real example, then a few. Ask whether that validates enough before building tooling. "Revert, then make the smallest change knowing what we know now" is a normal outcome.
 
@@ -20,7 +20,7 @@ Answer "does this approach work, and is it the right one?" quickly, with evidenc
 6. **Interview for taste.** Show real outputs and have the user label them good or bad. The labels become eval cases.
 
 7. **Eval loops for prompt, agent or LLM-output work.** Use the repo's eval tooling if it has some. Never put eval questions, answers or fixtures in the prompt being scored.
-   - **Fixing one failure:** capture the case, confirm it fails (3–5 runs if flaky), make a *generic* fix, confirm it passes, and check related cases for regressions. Then test generalisation with a hidden case written in a separate session that never saw the fix. Only run it and report pass or fail; never read or tune against it.
+   - **Fixing one failure:** capture the case, confirm it fails (3–5 runs if flaky), make a _generic_ fix, confirm it passes, and check related cases for regressions. Then test generalisation with a hidden case written in a separate session that never saw the fix. Only run it and report pass or fail; never read or tune against it.
    - **Improving a suite:** build it from real labelled outputs, take a repeated baseline, then hill-climb pass rate, cost and latency against a held-out split. Read raw outputs, not just scores, and revert ideas the numbers don't justify.
 
 8. **Agree a finish line** for long runs (evals, model checking, device runs) up front. Cut to a subset rather than running overnight.

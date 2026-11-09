@@ -9,7 +9,7 @@ Agree what to build, and what not to, before writing code. It ends with a writte
 
 1. **Load the context yourself.** Read the ticket with its comments, relations and linked docs, or the linked thread, error or dashboard, in full. If a brief looks cut off, ask for the rest. Restate the problem in one or two sentences.
 
-2. **Check it's still needed.** Search main, merged PRs, open PRs and sibling tickets *by subject*, because PRs often don't mention the ticket ID. If it's done, superseded or owned by someone else, say so and stop.
+2. **Check it's still needed.** Search main, merged PRs, open PRs and sibling tickets _by subject_, because PRs often don't mention the ticket ID. If it's done, superseded or owned by someone else, say so and stop.
 
 3. **Understand how it works today.** Trace the real code paths. Where prevalence or thresholds matter, check the data (with permission for production) before proposing a systematic fix.
 
