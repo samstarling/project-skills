@@ -1,0 +1,11 @@
+{
+  "name": "project-skills",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "3.9.10"
+  }
+}
