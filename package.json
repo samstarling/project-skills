@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "format": "prettier --write .",
-    "lint": "prettier --check ."
+    "lint": "prettier --check . && node scripts/check-skills.mjs"
   },
   "devDependencies": {
     "prettier": "3.9.10"

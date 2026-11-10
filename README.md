@@ -34,4 +34,4 @@ The skills don't include general safety rules for pushing, posting or production
 - A skill can only reference files in its own folder, because installers copy folders one at a time.
 - Name the role, not one agent's tool. Where a name helps, give each agent's.
 - Keep skills under about 40 lines and descriptions under about 600 characters, leading with phrases people actually say.
-- Run `npm run format` before committing.
+- Run `npm run format`, then `npm run lint`, which checks these limits. CI runs the same lint on every PR.
