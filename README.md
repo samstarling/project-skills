@@ -17,6 +17,15 @@ Update with `npx skills update -g`, then restart your agents.
 
 Prototyping is only for unproven ideas, and well-defined work can start at implement. Code review and the PR use your agent's own reviewer and PR tools.
 
+## Example
+
+A made-up project to summarise support tickets with an LLM:
+
+1. **Scope:** "What would it take to summarise support tickets?" The agent reads the code, gives options with a size, and agrees the smallest useful version with you. Once you approve, it writes the brief and the tickets.
+2. **Prototype:** "Can we prove the AI output is good enough?" It builds a throwaway version on real tickets. You label its summaries good or bad, and those labels become an eval suite: 36 of 40 good, at 2p a ticket. It records the verdict in the project doc, then "turn this prototype into PRs" splits the work into small tickets.
+3. **Implement:** "Let's pick up ABC-124." It proposes the design, builds the first slice with the eval suite, and leaves it committed. You review it and open the PR with your agent's own tools.
+4. **Reconcile:** "That's merged, what's left on the project?" It checks the docs and tickets against what has merged, proposes fixes, and recommends the next ticket.
+
 ## Principles
 
 - **Smallest slice first.** Everything else, including side issues, becomes a drafted ticket.
