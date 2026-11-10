@@ -1,6 +1,6 @@
 ---
 name: project-scope
-description: Agree the smallest useful scope before code is written, for a ticket, a feasibility question or a new project. Use when the user asks to plan an approach ("hatch a plan for ABC-123", "I don't love the approach in ABC-123"), asks "what would it take to…" or "is that even possible?", asks to roast a plan, asks "is ABC-123 still valid?", is writing or reshaping a project's brief, specs or milestones, says "break this into tickets", or asks to log or update a ticket ("log a ticket for that"). Not for a well-defined ticket they say to pick up and build (project-implement).
+description: Agree the smallest useful scope before code is written, for a ticket, a feasibility question or a new project. Use when the user asks to plan an approach ("hatch a plan for ABC-123", "I don't love the approach in ABC-123"), asks "what would it take to…", "what are our options?" or "is that even possible?", asks to roast a plan, asks "is ABC-123 still valid?", is writing or reshaping a project's brief, specs or milestones, says "break this into tickets", or asks to log or update a ticket ("log a ticket for that"). Not for a well-defined ticket they say to pick up and build (project-implement).
 ---
 
 # Scoping
